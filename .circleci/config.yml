@@ -8,14 +8,17 @@ jobs:
     steps:
       - checkout
       - run: rm -rf site
+
       - run: 
           name: instalación del virtualenv
           command: pip install --upgrade pip && pip install virtualenv && virtualenv env --python=python3.6
+
       - run:
           name: instalaciOn de mkdocs y  en un entorno virtual.
           command: source ./env/bin/activate && 
-            pip install mkdocs
-      - run: mkdocs build
+            pip install mkdocs &&
+            mkdocs build
+
       - save_cache:
           key: 12345678
           paths:
