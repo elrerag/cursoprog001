@@ -1,1 +1,6 @@
-site_name: My Docs
+site_name: Tres programadores para chile
+
+nav:
+- Home: 'index.md'
+- Pseudocodigo: 
+  - Ejercicios: psint/ejercicios.md
