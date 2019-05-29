@@ -1,0 +1,50 @@
+version: 2
+
+jobs:
+  construccion:
+    docker:
+      - image: circleci/python:3.6
+    working_directory: /tmp/cursoprog001
+    steps:
+      - checkout
+      - run: rm -rf site
+      - run: 
+          name: instalación del virtualenv
+          command: pip install --upgrade pip && pip install virtualenv && virtualenv env --python=python3.6
+      - run:
+          name: instalaciOn de mkdocs y  en un entorno virtual.
+          command: source ./env/bin/activate && 
+            pip install mkdocs && 
+      - run: mkdocs build
+      - save_cache:
+          key: 12345678
+          paths:
+            - /tmp/cursoprog001/site
+
+  despliegue:
+    docker:
+      - image: circleci/node:10
+    working_directory: /tmp/cursoprog001
+    steps:
+      - checkout
+      - restore_cache:
+          key: 12345678
+      - run: 
+          name: Install Firebase Tools
+          command: npm install firebase-tools
+      - run:
+          name: Deploy Master to Firebase
+          command: ./node_modules/.bin/firebase deploy --token=1/vvFnXPC_Ib3K1rhPAOTNoyuYxM9FX9XYa6NBwItcA8TmgHYc0oeXMAZHroZl_VjJ
+
+workflows:
+  version: 2
+
+  -deploy:
+    jobs:
+      - construccion
+      - despliegue:
+          requires:
+            - construccion
+          filters:
+            branches:
+              only: master
