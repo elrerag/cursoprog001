@@ -144,7 +144,7 @@ Proceso ejercicio5
 FinProceso
 ```
   
-## Ejercicio 7: Crear un algoritmo que  realice la tarea anterior pero esta vez con tres números.
+## Crear un algoritmo que  realice la tarea anterior pero esta vez con tres números.
   
   
 Solución
