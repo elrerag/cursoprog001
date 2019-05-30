@@ -8,7 +8,6 @@ jobs:
     steps:
       - checkout
       - run: rm -rf ./site
-
       - run: 
           name: instalación del virtualenv
           command: pip install --upgrade pip && pip install virtualenv && virtualenv env --python=python3.6
@@ -28,6 +27,7 @@ jobs:
       - image: circleci/node:10
     working_directory: /tmp/cursoprog001
     steps:
+      - checkout
       - run: 
           name: Install Firebase Tools
           command: npm install firebase-tools
