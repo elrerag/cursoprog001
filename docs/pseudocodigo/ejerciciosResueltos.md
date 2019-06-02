@@ -1,7 +1,8 @@
 # Ejercicios
   
+# Nivel 01: (Paradigma Imperativo)
 
-## Crear un algoritmo que pida un nombre por consola y retorne el saludo “Estimado {{nombre ingresado}}"
+## 01-01: Crear un algoritmo que pida un nombre por consola y retorne el saludo “Estimado {{nombre ingresado}}"
   
 
 Solución  
@@ -18,7 +19,7 @@ Proceso ejercicio1
 FinProceso
 ```
 
-## Crear un algoritmo que sume tres números ingresados por consola e imprima su resultado.
+## 01-02: Crear un algoritmo que sume tres números ingresados por consola e imprima su resultado.
   
   
 Solución
@@ -43,7 +44,7 @@ Proceso ejercicio2
 FinProceso
 ```
 
-## Crear un algoritmo que reste dos números ingresados por consola e imprima sus resultados.
+## 01-03: Crear un algoritmo que reste dos números ingresados por consola e imprima sus resultados.
   
   
 Solución
@@ -64,7 +65,7 @@ Proceso ejercicio2
 FinProceso
 ```
 
-## Crear un algoritmo que divida dos números y entregue su resultado en decimales.
+## 01-04: Crear un algoritmo que divida dos números y entregue su resultado en decimales.
 > hint: trabajar con números reales y no enteros.
   
   
@@ -85,6 +86,8 @@ Proceso ejercicio4
 	
 FinProceso
 ```
+
+
 ## Crear un algoritmo que  pida un número por consola e imprima si el número ingresado es par o impar.
 hint: La función módulo, indica el resto de la divición (entera) entre dós números:
 
@@ -117,8 +120,10 @@ Proceso ejercicio4
 
 FinProceso
 ```
+
+# Nivel 02: (Paradigma procedural)
   
-## Crear un algoritmo que  pida dos números por consola e imprima el mayor.
+## 02-01 Crear un algoritmo que  pida dos números por consola e imprima el mayor.
   
   
 Solución
@@ -144,7 +149,7 @@ Proceso ejercicio5
 FinProceso
 ```
   
-## Crear un algoritmo que  realice la tarea anterior pero esta vez con tres números.
+## 02-02 Crear un algoritmo que  realice la tarea anterior pero esta vez con tres números.
   
   
 Solución
@@ -184,4 +189,5 @@ Proceso ejercicio5
 	
 FinProceso
 ```
- 
+  
+  
