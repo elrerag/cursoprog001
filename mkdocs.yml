@@ -3,6 +3,6 @@ site_name: Tres programadores para chile
 nav:
 - Home: 'index.md'
 - Pseudocodigo: 
-  - Documentación: pseudocodigo/index.md
+  - Documentación: pseudocodigo/documentacion.md
   - Ejercicios Resueltos: pseudocodigo/ejerciciosResueltos.md
   - Ejercicios Propuestos: pseudocodigo/ejerciciosPropuestos.md
